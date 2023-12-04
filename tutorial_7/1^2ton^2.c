@@ -10,6 +10,6 @@ int main()
     {
         printf("%d^2+",i);
     }
-    printf("\b%d",ans);
+    printf("\b=%d\n",ans);
     return 0;
 }
