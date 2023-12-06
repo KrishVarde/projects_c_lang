@@ -15,5 +15,5 @@ void main()
     else if (g < 40)
         printf("fail");
     else
-        printf("naughty hora bhen ke lau*e?");
+        printf("naughty hora");
 }
