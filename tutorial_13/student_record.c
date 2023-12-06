@@ -3,45 +3,22 @@
 int main()
 {
     // declared stucture or union its your choice :)
-    union student_record
-    {
+    struct StudentRecord {
         char name[20];
         int en_num;
         int sub_marks[3];
         char grade[3];
         int total[3];
-    } stu[5];
+    };
 
-    // record its also your choice :)
-    strcpy(stu[0].name, "chaganlal");
-    stu[0].en_num = 201229;
-    stu[0].sub_marks[0] = 80;
-    stu[0].sub_marks[1] = 91;
-    stu[0].sub_marks[2] = 50;
-
-    strcpy(stu[1].name, "maganlal");
-    stu[1].en_num = 201230;
-    stu[1].sub_marks[0] = 78;
-    stu[1].sub_marks[1] = 95;
-    stu[1].sub_marks[2] = 14;
-
-    strcpy(stu[2].name, "jethalal");
-    stu[2].en_num = 201231;
-    stu[2].sub_marks[0] = 99;
-    stu[2].sub_marks[1] = 99;
-    stu[2].sub_marks[2] = 100;
-
-    strcpy(stu[3].name, "aiyar");
-    stu[3].en_num = 201232;
-    stu[3].sub_marks[0] = 0;
-    stu[3].sub_marks[1] = 12;
-    stu[3].sub_marks[2] = 1;
-
-    strcpy(stu[4].name, "mangasingh");
-    stu[4].en_num = 201233;
-    stu[4].sub_marks[0] = 70;
-    stu[4].sub_marks[1] = 90;
-    stu[4].sub_marks[2] = 80;
+    // Array of struct instances
+    struct StudentRecord stu[5] = {
+        {"chaganlal", 201229, {80, 91, 50}},
+        {"maganlal", 201230, {78, 95, 14}},
+        {"jethalal", 201231, {99, 99, 100}},
+        {"aiyar", 201232, {0, 12, 1}},
+        {"mangasingh", 201233, {70, 90, 80}}
+    };
 
     // dispaly grade its not choice its fixed :)
     for (int i = 0; i < 5; i++)
@@ -67,7 +44,7 @@ int main()
     {
         for (int j = 0; j < 3; j++)
         {
-            
+            stu[i].total[i]=stu[i].sub_marks[j]+stu[i].total[i];
         }
         
     }
