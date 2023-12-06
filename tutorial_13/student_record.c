@@ -9,6 +9,7 @@ int main()
         int en_num;
         int sub_marks[3];
         char grade[3];
+        int total[3];
     } stu[5];
 
     // record its also your choice :)
@@ -26,15 +27,15 @@ int main()
 
     strcpy(stu[2].name, "jethalal");
     stu[2].en_num = 201231;
-    stu[2].sub_marks[0] = 60;
+    stu[2].sub_marks[0] = 99;
     stu[2].sub_marks[1] = 99;
-    stu[2].sub_marks[2] = 40;
+    stu[2].sub_marks[2] = 100;
 
-    strcpy(stu[3].name, "lalulal");
+    strcpy(stu[3].name, "aiyar");
     stu[3].en_num = 201232;
-    stu[3].sub_marks[0] = 83;
-    stu[3].sub_marks[1] = 70;
-    stu[3].sub_marks[2] = 60;
+    stu[3].sub_marks[0] = 0;
+    stu[3].sub_marks[1] = 12;
+    stu[3].sub_marks[2] = 1;
 
     strcpy(stu[4].name, "mangasingh");
     stu[4].en_num = 201233;
@@ -61,10 +62,16 @@ int main()
     }
 
     //comparing and saying who has topped...
+    //we need to first make total
     for (int i = 0; i < 5; i++)
     {
+        for (int j = 0; j < 3; j++)
+        {
+            
+        }
         
     }
     
+
     return 0;
 }
